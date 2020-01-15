@@ -12,6 +12,9 @@ from gensim.models import CoherenceModel
 
 import streamlit as st
 
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 # Header
 ### Set Title
 st.title("Review Rating Predictor")
