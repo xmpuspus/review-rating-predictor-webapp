@@ -2,6 +2,10 @@
 Author: Xavier M. Puspus
 
 ### Description
+
+[Click this link to explore the web application hosted in Heroku.](https://review-rating-predictor.herokuapp.com/)  
+
+
 I used a sample dataset on insurance pricing and built a simple web application with a machine learning backend to see live changes to predicted/suggested prices based on changes in input data.
 
 ### Data
