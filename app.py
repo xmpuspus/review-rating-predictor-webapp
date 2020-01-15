@@ -55,4 +55,4 @@ regression_model = joblib.load('models/lr_model.sav')
 prediction = regression_model.predict([document_topic])[0]
 
 # Predicted rating
-st.write(f'This is the predicted {prediction}.')
+st.write(f'Predicted rating is {float("{0:.2f}".format(prediction))}.')
