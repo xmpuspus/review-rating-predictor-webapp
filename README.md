@@ -24,7 +24,11 @@ In order to run the app, you must have the basic data science packages available
 foo@bar:~$ pip install streamlit
 ```
 
-Checkout the `requirements.txt` file for installation specs.  
+Checkout the `requirements.txt` file for installation specs. You can install packages needed for this repo through:
+
+```console
+foo@bar:~$ pip install -r requirements.txt
+```
 
 Afterwards, `cd` into the directory of `app.py` and run this on the terminal:  
 
