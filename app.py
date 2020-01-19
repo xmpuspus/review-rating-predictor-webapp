@@ -23,6 +23,9 @@ st.write("""From the input review, predict rating.""")
 # Text input
 text = st.text_area("Input review text", 'Input text here.')
 
+# Age input
+Age = st.sidebar.slider('Age', 10, 90, 21)
+
 # Function to Clean text
 stop = set(stopwords.words('english'))
 exclude = set(string.punctuation) 
@@ -55,7 +58,7 @@ document_topic =  [i[1] for i in lists]
 regression_model = joblib.load('models/lr_model.sav')
 
 # predict on output document topic
-prediction = regression_model.predict([document_topic])[0]
+prediction = regression_model.predict([document_topic + [Age]])[0]
 
 # Predicted rating
 st.write(f'Predicted rating is {float("{0:.2f}".format(prediction))}.')
